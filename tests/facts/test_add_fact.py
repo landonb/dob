@@ -15,10 +15,10 @@
 # You can find the GNU General Public License reprinted in the file titled 'LICENSE',
 # or visit <http://www.gnu.org/licenses/>.
 
-import datetime
-
 from freezegun import freeze_time
 import pytest
+
+from nark.tests.helpers.conftest import factoid_fixture
 
 from dob.facts.add_fact import add_fact
 
@@ -27,114 +27,7 @@ class TestAddFact(object):
     """Unit test related to starting a new fact."""
 
     @freeze_time('2015-12-25 18:00')
-    @pytest.mark.parametrize(
-        ('raw_fact', 'time_hint', 'expectation'),
-        [
-            # Use clock-to-clock format, the date inferred from now; with actegory.
-            ('13:00 to 16:30: foo@bar', 'verify_both', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 25, 13, 0, 0),
-                'end': datetime.datetime(2015, 12, 25, 16, 30, 0),
-                'tags': [],
-            }),
-            # Use datetime-to-datetime format, with actegory.
-            ('2015-12-12 13:00 to 2015-12-12 16:30: foo@bar', 'verify_both', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                'end': datetime.datetime(2015, 12, 12, 16, 30, 0),
-                'tags': [],
-            }),
-            # The end date is inferred from start date.
-            ('2015-12-12 13:00 - 18:00 foo@bar', 'verify_both', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                'end': datetime.datetime(2015, 12, 12, 18, 00, 0),
-                'tags': [],
-            }),
-            # actegory spanning day (straddles) midnight) and spanning multiple days.
-            ('2015-12-12 13:00 - 2015-12-25 18:00 foo@bar', 'verify_both', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                'end': datetime.datetime(2015, 12, 25, 18, 00, 0),
-                'tags': [],
-            }),
-            # Create open/ongoing/un-ended fact.
-            ('2015-12-12 13:00 foo@bar', 'verify_start', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                'end': None,
-                'tags': [],
-            }),
-            # Create ongoing fact starting at right now.
-            ('foo@bar', 'verify_none', {
-                'activity': 'foo',
-                'category': 'bar',
-                'start': datetime.datetime(2015, 12, 25, 18, 0, 0),
-                'end': None,
-                'tags': [],
-            }),
-            # Tags.
-            (
-                '2015-12-12 13:00 foo@bar: #precious #hashish, i like ike',
-                'verify_start',
-                {
-                    'activity': 'foo',
-                    'category': 'bar',
-                    'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                    'end': None,
-                    'tags': ['precious', 'hashish'],
-                    'description': 'i like ike',
-                },
-            ),
-            # Multiple Tags are identified by a clean leading delimiter character.
-            (
-                '2015-12-12 13:00 foo@bar, #just walk away "#not a tag", blah',
-                'verify_start',
-                {
-                    'activity': 'foo',
-                    'category': 'bar',
-                    'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                    'end': None,
-                    'tags': ['just walk away "#not a tag"'],
-                    'description': 'blah',
-                },
-            ),
-            # Alternative tag delimiter; and quotes are just consumed as part of tag.
-            (
-                '2015-12-12 13:00 foo@bar, #just walk away @"totes a tag", blah',
-                'verify_start',
-                {
-                    'activity': 'foo',
-                    'category': 'bar',
-                    'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                    'end': None,
-                    'tags': ['just walk away', '"totes a tag"'],
-                    'description': 'blah',
-                },
-            ),
-            # Test '#' in description, elsewhere, after command, etc.
-            (
-                '2015-12-12 13:00 baz@bat",'
-                ' #tag1, #tag2 tags cannot come #too late, aha!'
-                ' Time is also ignored at end: 12:59',
-                'verify_start',
-                {
-                    'activity': 'baz',
-                    'category': 'bat"',
-                    'start': datetime.datetime(2015, 12, 12, 13, 0, 0),
-                    'end': None,
-                    'tags': ['tag1'],
-                    'description': '#tag2 tags cannot come #too late, aha!'
-                                   ' Time is also ignored at end: 12:59',
-                },
-            ),
-        ],
-    )
+    @pytest.mark.parametrize(*factoid_fixture)
     def test_add_new_fact(
         self,
         controller_with_logging,
