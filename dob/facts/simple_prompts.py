@@ -215,16 +215,14 @@ def echo_ongoing_completed(controller, fact, cancelled=False):
         return width_avail
 
     def echo_fact(leader, colorful, cut_width):
+        # FIXME: (lb): Add UTC support. Currently, all times "local".
+        localize = True
         completed_msg = (
             leader
             + fact.friendly_str(
                 shellify=False,
                 description_sep=': ',
-
-                # FIXME: (lb): Implement localize.
-                # FIXME/2018-06-10: (lb): fact being saved as UTC
-                localize=True,
-
+                localize=localize,
                 colorful=colorful,
                 cut_width_complete=cut_width,
                 show_elapsed=True,
