@@ -21,10 +21,10 @@ Credits
 .. _hamster-cli: https://github.com/projecthamster/hamster-cli
 
 .. |Landon Bouma| replace:: Landon Bouma
-.. _Landon Bouma: https://www.tallybark.com/
+.. _Landon Bouma: https://github.com/landonb
 
-.. |HotOffThe Hamster| replace:: HotOffThe Hamster
-.. _HotOffThe Hamster: https://github.com/hotoffthehamster
+.. |Tally Bark LLC| replace:: Tally Bark LLC
+.. _Tally Bark LLC: https://www.tallybark.com/
 
 ########################
 ``dob`` (2018 — Present)
@@ -33,8 +33,7 @@ Credits
 Project Lead
 ============
 
-* |Landon Bouma|_ for
-  |HotOffThe Hamster|_.
+* |Landon Bouma|_ for |Tally Bark LLC|_ ``<landonb.dob@tallybark[.]com>``
 
 Coupled Projects
 ================

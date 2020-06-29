@@ -46,14 +46,14 @@ sys.path.insert(0, project_root)
 
 project_dist = 'dob'
 package_name = 'dob'
-project_ghuser = 'hotoffthehamster'
+project_ghuser = 'tallybark'
 project_ghrepo = project_dist
 project_texinfo = 'One line description of project.'
 project_docinfo = '{} Documentation'.format(project_dist)
 project_htmlhelp_basename = 'Dobdoc'
-project_copy = '2018-2020 Landon Bouma, HotOffThe Hamster, & contributors.'
+project_copy = '2018-2020 Landon Bouma, Tally Bark LLC, & contributors.'
 project_auth = 'Landon Bouma'
-project_orgn = 'HotOffThe Hamster'
+project_orgn = 'Tally Bark LLC'
 
 exclude_patterns = [
     'CODE-OF-CONDUCT.rst',
