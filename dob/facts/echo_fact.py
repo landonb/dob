@@ -102,7 +102,11 @@ class AnsiWrapper(TextWrapper):
 
 def echo_single_fact(controller, fact):
     colorful = controller.config['term.use_color']
-    localize = controller.config['time.tz_aware']
+    # (lb): Would user ever want to see UTC time instead?
+    # - For now, assume user wants to see time in local TZ.
+    #   (Also, for now, UTC support not fully implemented.)
+    #  localize = not controller.config['time.tz_aware']
+    localize = True
     friendly = fact.friendly_str(
         shellify=False,
         description_sep=': ',
