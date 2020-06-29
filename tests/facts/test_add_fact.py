@@ -54,8 +54,8 @@ class TestAddFact(object):
         fact = args[0]
         assert fact.start == expectation['start']
         assert fact.end == expectation['end']
-        assert fact.activity.name == expectation['activity']
-        assert fact.category.name == expectation['category']
+        assert fact.activity_name == expectation['activity']
+        assert fact.category_name == expectation['category']
         expecting_tags = ''
         tagnames = list(expectation['tags'])
         if tagnames:
@@ -63,7 +63,7 @@ class TestAddFact(object):
             expecting_tags = ['#{}'.format(name) for name in tagnames]
             expecting_tags = '{}'.format(' '.join(expecting_tags))
         assert fact.tagnames() == expecting_tags
-        expect_description = expectation.get('description', None)
+        expect_description = expectation.get('description', None) or None
         assert fact.description == expect_description
 
 
