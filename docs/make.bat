@@ -2,7 +2,7 @@
 
 REM This file exists within 'dob':
 REM
-REM   https://github.com/hotoffthehamster/dob
+REM   https://github.com/tallybark/dob
 
 set PROJECTNAME=dob
 

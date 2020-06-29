@@ -401,6 +401,6 @@ linkcheck_anchors_ignore = [
 ]
 linkcheck_ignore = [
     # FIXME/2019-02-22 22:19: Until it goes live...
-    'https://github.com/hotoffthehamster/dob-plugin-example',
+    'https://github.com/tallybark/dob-plugin-example',
 ]
 

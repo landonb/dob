@@ -3,7 +3,7 @@ Basic Usage
 ###########
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 Start Fresh
 -----------

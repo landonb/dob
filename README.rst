@@ -2,32 +2,32 @@
 dob
 @@@
 
-.. image:: https://api.travis-ci.com/hotoffthehamster/dob.svg?branch=proving
-  :target: https://travis-ci.com/hotoffthehamster/dob
+.. image:: https://api.travis-ci.com/tallybark/dob.svg?branch=proving
+  :target: https://travis-ci.com/tallybark/dob
   :alt: Build Status
 
-.. image:: https://codecov.io/gh/hotoffthehamster/dob/branch/proving/graph/badge.svg
-  :target: https://codecov.io/gh/hotoffthehamster/dob
+.. image:: https://codecov.io/gh/tallybark/dob/branch/proving/graph/badge.svg
+  :target: https://codecov.io/gh/tallybark/dob
   :alt: Coverage Status
 
 .. image:: https://readthedocs.org/projects/dob/badge/?version=latest
   :target: https://dob.readthedocs.io/en/latest/
   :alt: Documentation Status
 
-.. image:: https://img.shields.io/github/v/release/hotoffthehamster/dob.svg?style=flat
-  :target: https://github.com/hotoffthehamster/dob/releases
+.. image:: https://img.shields.io/github/v/release/tallybark/dob.svg?style=flat
+  :target: https://github.com/tallybark/dob/releases
   :alt: GitHub Release Status
 
 .. image:: https://img.shields.io/pypi/v/dob.svg
   :target: https://pypi.org/project/dob/
   :alt: PyPI Release Status
 
-.. image:: https://img.shields.io/github/license/hotoffthehamster/dob.svg?style=flat
-  :target: https://github.com/hotoffthehamster/dob/blob/release/LICENSE
+.. image:: https://img.shields.io/github/license/tallybark/dob.svg?style=flat
+  :target: https://github.com/tallybark/dob/blob/release/LICENSE
   :alt: License Status
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 .. |pip| replace:: ``pip``
 .. _pip: https://pip.pypa.io/en/stable/

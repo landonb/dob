@@ -51,13 +51,13 @@ requirements = [
     #  https://github.com/hotoffthehamster/human-friendly_pedantic-timedelta
     'human-friendly_pedantic-timedelta >= 2.0.0, <= 2.0.10',
     # The heart of Hamster. (Ye olde `hamster-lib`).
-    #  https://github.com/hotoffthehamster/nark
+    #  https://github.com/tallybark/nark
     'nark > 3.2.2, < 3.2.4',  # I.e., release 3.2.3, or whatever dev's running.
     # The controller, config, and common output and error tossing code.
-    #  https://github.com/hotoffthehamster/dob-bright
+    #  https://github.com/tallybark/dob-bright
     'dob-bright > 1.2.3, < 1.2.5',  # I.e., release 1.2.4, or dev's intermediate.
     # The so-called Facts "carousel" chrono-viewer.
-    #  https://github.com/hotoffthehamster/dob-viewer
+    #  https://github.com/tallybark/dob-viewer
     'dob-viewer > 1.2.3, < 1.2.5',  # I.e., release 1.2.4, or dev's intermediate.
 ]
 

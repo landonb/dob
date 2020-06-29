@@ -2,22 +2,22 @@ Contributing
 ============
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 .. |dob-viewer| replace:: ``dob-viewer``
-.. _dob-viewer: https://github.com/hotoffthehamster/dob-viewer
+.. _dob-viewer: https://github.com/tallybark/dob-viewer
 
 .. |dob-prompt| replace:: ``dob-prompt``
-.. _dob-prompt: https://github.com/hotoffthehamster/dob-prompt
+.. _dob-prompt: https://github.com/tallybark/dob-prompt
 
 .. |dob-bright| replace:: ``dob-bright``
-.. _dob-bright: https://github.com/hotoffthehamster/dob-bright
+.. _dob-bright: https://github.com/tallybark/dob-bright
 
 .. |nark| replace:: ``nark``
-.. _nark: https://github.com/hotoffthehamster/nark
+.. _nark: https://github.com/tallybark/nark
 
 .. |user-docs| replace:: user documentation
-.. _user-docs: https://github.com/hotoffthehamster/dob/tree/release/docs
+.. _user-docs: https://github.com/tallybark/dob/tree/release/docs
 
 .. |envlist| replace:: ``envlist``
 .. _envlist: https://tox.readthedocs.io/en/latest/config.html#conf-envlist
@@ -69,7 +69,7 @@ Then, decide how you'd like to contribute:
 Report Bugs
 ^^^^^^^^^^^
 
-Report bugs at https://github.com/hotoffthehamster/dob/issues.
+Report bugs at https://github.com/tallybark/dob/issues.
 
 When reporting a bug, please include:
 
@@ -99,7 +99,7 @@ us to improve it.
 
 This includes the official |user-docs|_,
 the `README
-<https://github.com/hotoffthehamster/dob/blob/release/README.rst>`__,
+<https://github.com/tallybark/dob/blob/release/README.rst>`__,
 and the inline docstrings that generate the `API documentation
 <https://dob.readthedocs.io/en/latest/modules.html>`__
 (per |PEP-257|_ and |goog-py-sty|_).
@@ -110,7 +110,7 @@ Submit Feedback
 ^^^^^^^^^^^^^^^
 
 The best way to send feedback is to file an issue at
-https://github.com/hotoffthehamster/dob/issues.
+https://github.com/tallybark/dob/issues.
 
 See above for reporting bugs.
 
@@ -222,7 +222,7 @@ for local development.
    ``proving`` branch is up to date with the official branch::
 
     (dob) $ cdproject
-    (dob) $ git remote add upstream git@github.com:hotoffthehamster/dob.git
+    (dob) $ git remote add upstream git@github.com:tallybark/dob.git
     (dob) $ git fetch upstream
     (dob) $ git checkout proving
     (dob) $ git merge --ff-only upstream/proving
@@ -410,7 +410,7 @@ for local development.
 
 #. Finally,
    `submit a pull request
-   <https://github.com/hotoffthehamster/dob/pulls>`_
+   <https://github.com/tallybark/dob/pulls>`_
    through the GitHub website.
 
    *Important:* Please rebase your code against ``proving`` and resolve

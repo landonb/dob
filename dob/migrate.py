@@ -122,7 +122,7 @@ Be sure to make a backup first, in case something goes wrong!
 #
 #   See the project page for more information:
 #
-#       https://github.com/hotoffthehamster/nark
+#       https://github.com/tallybark/nark
 #
 # As for actual upgrade help online, there's only one spot, but
 # it says nothing more than what we've said here. It's at

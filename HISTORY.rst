@@ -3,19 +3,19 @@ History
 #######
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 .. |dob-viewer| replace:: ``dob-viewer``
-.. _dob-viewer: https://github.com/hotoffthehamster/dob-viewer
+.. _dob-viewer: https://github.com/tallybark/dob-viewer
 
 .. |dob-prompt| replace:: ``dob-prompt``
-.. _dob-prompt: https://github.com/hotoffthehamster/dob-prompt
+.. _dob-prompt: https://github.com/tallybark/dob-prompt
 
 .. |dob-bright| replace:: ``dob-bright``
-.. _dob-bright: https://github.com/hotoffthehamster/dob-bright
+.. _dob-bright: https://github.com/tallybark/dob-bright
 
 .. |nark| replace:: ``nark``
-.. _nark: https://github.com/hotoffthehamster/nark
+.. _nark: https://github.com/tallybark/nark
 
 .. |hamster-cli| replace:: ``hamster-cli``
 .. _hamster-cli: https://github.com/projecthamster/hamster-cli
@@ -1030,7 +1030,7 @@ History
 - Modernized packaging infrastructure. Moved metadata to ``setup.cfg`` and
   dumped ``bumpversion`` for git-tags-aware ``setuptools_scm`` versioning.
 
-- Setup HotOffThe Hamster CI accounts on Codecov, Travis CI, and ReadTheDocs.
+- Setup accounts on Codecov, Travis CI, and ReadTheDocs.
 
 - Attached Code of Conduct to Developer Contract.
 

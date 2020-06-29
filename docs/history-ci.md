@@ -13,19 +13,19 @@
 
 ## 3.0.13 (2020-06-18)
 
-[dob]: https://github.com/hotoffthehamster/dob
+[dob]: https://github.com/tallybark/dob
     "`dob`"
 
-[nark]: https://github.com/hotoffthehamster/nark
+[nark]: https://github.com/tallybark/nark
     "`nark`"
 
-[dob-bright]: https://github.com/hotoffthehamster/dob-bright
+[dob-bright]: https://github.com/tallybark/dob-bright
     "`dob-bright`"
 
-[dob-prompt]: https://github.com/hotoffthehamster/dob-prompt
+[dob-prompt]: https://github.com/tallybark/dob-prompt
     "`dob-prompt`"
 
-[dob-viewer]: https://github.com/hotoffthehamster/dob-viewer
+[dob-viewer]: https://github.com/tallybark/dob-viewer
     "`dob-viewer`"
 
 - Highlights: Much improved searching and reporting.
@@ -927,7 +927,7 @@
 - Modernized packaging infrastructure. Moved metadata to `setup.cfg` and
   dumped `bumpversion` for git-tags-aware `setuptools_scm` versioning.
 
-- Setup HotOffThe Hamster CI accounts on Codecov, Travis CI, and ReadTheDocs.
+- Setup accounts on Codecov, Travis CI, and ReadTheDocs.
 
 - Attached Code of Conduct to Developer Contract.
 

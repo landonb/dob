@@ -3,7 +3,7 @@ Installation
 ############
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 .. |virtualenv| replace:: ``virtualenv``
 .. _virtualenv: https://virtualenv.pypa.io/en/latest/
@@ -105,7 +105,7 @@ To develop on the project, link to the source files instead:
 
     (dob) $ deactivate
     $ rmvirtualenv dob
-    $ git clone git@github.com:hotoffthehamster/dob.git
+    $ git clone git@github.com:tallybark/dob.git
     $ cd dob
     $ mkvirtualenv -a $(pwd) --python=/usr/bin/python3.8 dob
     (dob) $ make develop

@@ -1,7 +1,7 @@
 :orphan:
 
 .. |dob| replace:: ``dob``
-.. _dob: https://github.com/hotoffthehamster/dob
+.. _dob: https://github.com/tallybark/dob
 
 .. |hamster-cli| replace:: ``hamster-cli``
 .. _hamster-cli: https://github.com/projecthamster/hamster-cli

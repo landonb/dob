@@ -42,7 +42,7 @@ def install_plugin(package_module_path, package_plugin_name):
 
     For an example, see:
 
-        https://github.com/hotoffthehamster/dob-plugin-example
+        https://github.com/tallybark/dob-plugin-example
 
     and search PyPI for matching "dob-plugin-\*" projects.
     """
