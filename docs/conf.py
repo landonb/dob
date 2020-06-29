@@ -2,7 +2,7 @@
 
 # This file exists within 'dob':
 #
-#   https://github.com/hotoffthehamster/dob
+#   https://github.com/tallybark/dob
 
 # Boilerplate documentation build configuration file,
 # (Originally) created by sphinx-quickstart on Tue Jul 9 22:26:36 2013

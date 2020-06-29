@@ -2,7 +2,7 @@
 
 # This file exists within 'dob':
 #
-#   https://github.com/hotoffthehamster/dob
+#   https://github.com/tallybark/dob
 
 PROJNAME = dob
 

@@ -1,6 +1,6 @@
 # This file exists within 'dob':
 #
-#   https://github.com/hotoffthehamster/dob
+#   https://github.com/tallybark/dob
 
 """
 Packaging instruction for setup tools.

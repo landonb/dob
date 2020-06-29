@@ -1,6 +1,6 @@
 # This file exists within 'dob':
 #
-#   https://github.com/hotoffthehamster/dob
+#   https://github.com/tallybark/dob
 #
 # Copyright © 2019-2020 Landon Bouma. All rights reserved.
 #
