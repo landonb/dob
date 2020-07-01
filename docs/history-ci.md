@@ -11,7 +11,7 @@
 [OhMyRepos]: https://github.com/landonb/ohmyrepos
     "OhMyRepos"
 
-## 3.0.13 (2020-06-18)
+## 3.0.14 (2020-07-02)
 
 [dob]: https://github.com/tallybark/dob
     "`dob`"
@@ -27,6 +27,12 @@
 
 [dob-viewer]: https://github.com/tallybark/dob-viewer
     "`dob-viewer`"
+
+- Change ownership to https://github.com/tallybark.
+
+- Docs: Bugfix: Correct typo.
+
+## 3.0.13 (2020-06-18)
 
 - Highlights: Much improved searching and reporting.
 

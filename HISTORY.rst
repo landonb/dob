@@ -25,6 +25,13 @@ History
 
 .. :changelog:
 
+3.0.14 (2020-07-02)
+===================
+
+- Change ownership to https://github.com/tallybark.
+
+- Docs: Bugfix: Correct typo.
+
 3.0.13 (2020-06-18)
 ===================
 
