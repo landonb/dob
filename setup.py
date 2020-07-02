@@ -49,7 +49,7 @@ requirements = [
     # Elapsed timedelta formatter, e.g., "1.25 days".
     # - Imports as `pedantic_timedelta`.
     #  https://github.com/hotoffthehamster/human-friendly_pedantic-timedelta
-    'human-friendly_pedantic-timedelta >= 2.0.0, <= 2.0.11',
+    'human-friendly_pedantic-timedelta == 2.0.11',
     # The heart of Hamster. (Ye olde `hamster-lib`).
     #  https://github.com/tallybark/nark
     'nark > 3.2.2, < 3.2.4',  # I.e., release 3.2.3, or whatever dev's running.
