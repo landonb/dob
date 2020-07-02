@@ -58,6 +58,6 @@ def list_tags(
         output_format=output_format,
         table_type=table_type,
         max_width=max_width,
-        output_path=output_path,
+        output_obj_or_path=output_path,
     )
 

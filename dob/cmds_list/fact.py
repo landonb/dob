@@ -204,7 +204,7 @@ def list_facts(
             max_width=max_width,
             row_limit=row_limit,
             factoid_rule=factoid_rule,
-            output_path=output_path,
+            output_obj_or_path=output_path,
             spark_total=spark_total,
             spark_width=spark_width,
             spark_secs=spark_secs,
