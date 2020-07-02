@@ -190,7 +190,7 @@ def list_facts(
     # ***
 
     def display_results(results, qt, output_path):
-        row_limit = suss_row_limit(qt)
+        row_limit = suss_row_limit(qt, output_path)
         n_written = render_results(
             controller,
             results,
@@ -214,7 +214,7 @@ def list_facts(
         )
         return n_written
 
-    def suss_row_limit(qt):
+    def suss_row_limit(qt, output_path):
         # Limit the number of rows dumped, unless user specified --limit,
         # or if not dumping to the terminal.
         _row_limit = row_limit
@@ -246,7 +246,7 @@ def list_facts(
         ).format(
             n_written=highlight_value(n_written),
             facts=Inflector(English).conditional_plural(n_written, _('Fact')),
-            output_path=highlight_value(output_path),
+            output_path=highlight_value(str(output_path)),
         ))
 
     def echo_warn_if_truncated(controller, n_results, n_rows):
