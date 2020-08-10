@@ -1091,8 +1091,8 @@ This command is essentially an alias to:
   \b
   {codehi}{rawname} find --journal --since 'last week' \\{reset}
   {codehi}   --group-activity --group-category --group-days \\{reset}
-  {codehi}   --sort usage --dir desc \\{reset}
-  {codehi}   -l start_date -l duration -l sparkline -l actegory -l tags_freq{reset}
+  {codehi}   --sort day --dir desc  --sort time \\{reset}
+  {codehi}   -l start_date -l duration -l sparkline -l actegory -l tags{reset}
 
 {results_processing_help}
         """
