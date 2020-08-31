@@ -46,6 +46,7 @@ def list_facts(
     # - Args: Select columns to output.
     show_usage=False,
     show_duration=False,
+    duration_format='',
     hide_description=False,
     column=None,
     # - Args: Output formatter processor writer.
@@ -207,7 +208,7 @@ def list_facts(
             output_obj_or_path=output_path,
             factoid_rule=factoid_rule,
             datetime_format=None,
-            duration_fmt=None,
+            duration_fmt=duration_format,
             spark_total=spark_total,
             spark_width=spark_width,
             spark_secs=spark_secs,

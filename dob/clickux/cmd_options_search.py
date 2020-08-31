@@ -493,6 +493,32 @@ _cmd_options_results_show_duration = [
 
 
 # ***
+# *** [RESULTS FORMAT] Duration.
+# ***
+
+def _cmd_options_duration_formats(item=''):
+    format_choices = [
+        '%S', # As seconds, to the second.
+        '%M', # As minutes, rounded down.
+        '%H:%M', # As 'hours:minutes'. rounded down.
+        'HHhMMm', # As '{hours} hour(s) {minutes} minute(s)'.
+        '', # As human friendly time.
+    ]
+    return format_choices
+
+
+_cmd_options_results_duration_format = [
+    click.option(
+        '--duration-format', '--df',
+        type=click.Choice(_cmd_options_duration_formats()),
+        default='',
+        show_default=False,
+        help=_("Duration format [default: Human-friendly ('')]."),
+    ),
+]
+
+
+# ***
 # *** [RESULTS HIDE/SHOW] Usage.
 # ***
 
@@ -1160,6 +1186,7 @@ def cmd_options_any_search_query(command='', item='', match=False, group=False):
             pass  # Show neither.
         else:  # Impossible.
             raise False  # pragma: no cover
+        options.extend(_cmd_options_results_duration_format)
 
     def append_cmd_options_results_fact_attrs_hide_show(options):
         # Search results report output column values hide/show options.
